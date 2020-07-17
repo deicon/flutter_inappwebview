@@ -140,7 +140,7 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
     channel.invokeMethod("onExitFullscreen", obj);
   }
 
-  @Override
+  /* @Override
   public void onShowCustomView(final View paramView, final CustomViewCallback paramCustomViewCallback) {
     if (this.mCustomView != null) {
       onHideCustomView();
@@ -169,7 +169,7 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
       obj.put("uuid", inAppBrowserActivity.uuid);
     channel.invokeMethod("onEnterFullscreen", obj);
   }
-
+ */
   @Override
   public boolean onJsAlert(final WebView view, String url, final String message,
                            final JsResult result) {
